@@ -1,4 +1,4 @@
-const numArrayHoare = Array.from({ length: 700000 }, () => Math.floor(Math.random() * 100 + 20));
+const numArrayHoare = Array.from({ length: 700000 }, () => Math.floor(Math.random() * 90 + 1));
 const numArrayLomuto = [...numArrayHoare];
 const numArrayHybridB = [...numArrayHoare];
 const numArrayHybridC = [...numArrayHoare];

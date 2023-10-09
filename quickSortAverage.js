@@ -1,9 +1,9 @@
-const iteration = 200;  // The number of times each sorting function will run.
+const iteration = 10;  // The number of times each sorting function will run.
 
 // Generate the array sets
 let arraySets = [];
 for (let i = 0; i < iteration; i++) {
-    arraySets.push(Array.from({ length: 700000 }, () => Math.floor(Math.random() * 10000 + 20)));
+    arraySets.push(Array.from({ length: 700000 }, () => Math.floor(Math.random() * 100 + 20)));
 }
 
 // Create a function to calculate average time for each sorting scheme
@@ -23,10 +23,10 @@ function averageTime(sortingFunction, sortingSchemeName) {
 	console.log(`${sortingSchemeName} Average Time: ${(totalTime / iteration).toFixed(4)}ms`);
 }
 
-// averageTime(quicksortLomuto, 'Lomuto’s Partition Scheme');
+averageTime(quicksortLomuto, 'Lomuto’s Partition Scheme');
 averageTime(quicksortHoare, 'Hoare’s Partition Scheme');
 averageTime(quicksortHybridC, 'HybridC’s Partition Scheme');
-averageTime(quicksortHybridD, 'HybridD’s Partition Scheme');
+// averageTime(quicksortHybridD, 'HybridD’s Partition Scheme');
 // averageTime(quicksortHybridB, 'HybridB’s Partition Scheme');
 
 

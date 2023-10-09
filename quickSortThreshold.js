@@ -1,4 +1,4 @@
-const iteration = 50; 
+const iteration = 350; 
 
 // Fix the set of arrays
 let arraySets = [];
@@ -7,7 +7,7 @@ for (let i = 0; i < iteration; i++) {
 }
 
 // Test with varying thresholds
-const minThreshold = 30;
+const minThreshold = 40;
 const maxThreshold = 50;
 
 for(let threshold = minThreshold; threshold <= maxThreshold; threshold++) {
