@@ -1,4 +1,4 @@
-const iteration = 10;  // The number of times each sorting function will run.
+const iteration = 3;  // The number of times each sorting function will run.
 
 // Generate the array sets
 let arraySets = [];
